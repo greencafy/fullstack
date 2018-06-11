@@ -1,100 +1,157 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-body{
-    font-family: 'Quicksand', sans-serif;
+
+
+.animate {
+   -webkit-transition: all 0.3s ease-in-out;
+ -moz-transition: all 0.3s ease-in-out;
+ -o-transition: all 0.3s ease-in-out;
+ -ms-transition: all 0.3s ease-in-out;
+ transition: all 0.3s ease-in-out;
 }
-.team{
-    padding:75px 0;
+
+/*=============== Home-team ===============*/
+
+.home-doctors {
+ text-align: center;
+ padding: 70px 0 80px;
+ background: #f0f5f6;
 }
-h6.description{
-	font-weight: bold;
-	letter-spacing: 2px;
-	color: #999;
-	border-bottom: 1px solid rgba(0, 0, 0,0.1);
-	padding-bottom: 5px;
+
+.home-doctors h2 {
+   font-weight: normal;
 }
-.profile{
-	margin-top: 25px;
+
+.home-doctors .common-doctor {
+ background-color: #fff;
 }
-.profile h1{
-	font-weight: normal;
-	font-size: 20px;
-	margin:10px 0 0 0;
+.home-doctors .common-doctor figure {
+ overflow: hidden;
+ width: 100%;
+ height: 196px;
 }
-.profile h2{
-	font-size: 14px;
-	font-weight: lighter;
-	margin-top: 5px;
+
+.home-doctors img {
+ width: 100%;
+ height: auto;
+ margin-top: -6em;
 }
-.profile .img-box{
-	opacity: 1;
-	display: block;
-	position: relative;
+
+.home-doctors .common-doctor h5 {
+ margin: 0 0 7px;
+ font-size: 18px;
+ font-weight: 700;
+ color: #3a3c41;
 }
-.profile .img-box:after{
-	content:"";
-	opacity: 0;
-	background-color: rgba(0, 0, 0, 0.75);
-	position: absolute;
-	right: 0;
-	left: 0;
-	top: 0;
-	bottom: 0;
+.home-doctors .common-doctor .for-border {
+ margin-bottom: 20px;
 }
-.img-box ul{
-	position: absolute;
-	z-index: 2;
-	bottom: 50px;
-	text-align: center;
-	width: 100%;
-	padding-left: 0px;
-	height: 0px;
-	margin:0px;
-	opacity: 0;
+.home-doctors .common-doctor .text-content {
+ padding: 19px 14px 13px;
 }
-.profile .img-box:after, .img-box ul, .img-box ul li{
-	-webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
+.home-doctors.doctors-var-two {
+ text-align: left;
+ background-color: #fff;
 }
-.img-box ul i{
-	font-size: 20px;
-	letter-spacing: 10px;
+.home-doctors.doctors-var-two .slogan-section {
+ text-align: left;
 }
-.img-box ul li{
-	width: 30px;
-    height: 30px;
-    text-align: center;
-    border: 1px solid #88C425;
-    margin: 2px;
-    padding: 5px;
-	display: inline-block;
+.home-doctors.doctors-var-two .common-doctor {
+ background-color: transparent;
 }
-.img-box a{
-	color:#fff;
+.home-doctors.doctors-var-two .common-doctor .for-border {
+ display: none;
 }
-.img-box:hover:after{
-	opacity: 1;
+.home-doctors.doctors-var-two .common-doctor .text-content {
+ padding: 20px 0 20px;
 }
-.img-box:hover ul{
-	opacity: 1;
+.home-doctors.doctors-var-two .text-center {
+ text-align: left;
 }
-.img-box ul a{
-	-webkit-transition: all 0.3s ease-in-out 0s;
-	-moz-transition: all 0.3s ease-in-out 0s;
-	transition: all 0.3s ease-in-out 0s;
+
+.slogan-section {
+ margin-bottom: 50px;
+ text-align: center;
 }
-.img-box a:hover li{
-	border-color: #fff;
-	color: #88C425;
+
+.home-doctors .common-doctor .for-border {
+ margin-bottom: 20px;
 }
-a{
-    color:#88C425;
+
+.for-border {
+ height: 11px;
+ width: 100%;
+ background: transparent url(http://omarhabash.com/nova/wp-content/uploads/2014/08/feature-border.png) center center no-repeat;
+ border: none;
 }
-a:hover{
-    text-decoration:none;
-    color:#519548;
+
+.home-doctors .common-doctor h5 small {
+ color: #008fd5;
+ font-weight: bold;
+ font-size: 0.8em;
+ font-style: italic;
 }
-i.red{
-    color:#BC0213;
+
+.home-doctors .common-doctor ul{
+ position: absolute;
+ top: 50%;
+ left: 0;
+ width: 100%;
+ margin-top: -28px;
+ text-align: center;
+ margin-top: 10em;
+ opacity: 0;
+ z-index: 1;
 }
+
+.home-doctors .common-doctor li a {
+ background: #008fd5;
+ color: white;
+ padding: 0.75em;
+ border: 5px solid rgba(255, 255, 255, 0.33);
+}
+
+
+.doc-img{
+  /* Webkit for Chrome and Safari */
+ -webkit-transform: scale(1, 1); // This is the scale for the normal size of the image.
+ -webkit-transition-duration: 500ms;
+ -webkit-transition-timing-function: ease-out;
+
+ /* Webkit for Mozila Firefox */
+ -moz-transform: scale(1, 1);
+ -moz-transition-duration: 500ms;
+ -moz-transition-timing-function: ease-out;
+
+ /* Webkit for IE( Version: 11, 10 ) */
+ -ms-transform: scale(1, 1);
+ -ms-transition-duration: 500ms;
+ -ms-transition-timing-function: ease-out;
+}
+
+.doc-item:hover .doc-img{
+  /* Webkit for Chrome and Safari */
+ -webkit-transform: scale(1.2, 1.2); // This is the enlarged size scale of the image.
+ -webkit-transition-duration: 500ms;
+ -webkit-transition-timing-function: ease-out;
+
+ /* Webkit for Mozila Firefox */
+ -moz-transform: scale(1.2, 1.2);
+ -moz-transition-duration: 500ms;
+ -moz-transition-timing-function: ease-out;
+
+ /* Webkit for IE( Version: 11, 10 ) */
+ -ms-transform: scale(1.20, 1.20);
+ -ms-transition-duration: 500ms;
+ -ms-transition-timing-function: ease-out;
+
+ opacity: 0.7;
+}
+
+.doc-item:hover .social-lists{
+ margin-top: -2em;
+ opacity: 1;
+}
+
+
+/*=============== //Home-team ===============*/
